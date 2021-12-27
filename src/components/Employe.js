@@ -54,15 +54,15 @@ const Employe = () => {
             <form action="" onSubmit={handleSubmit}>
                 <div>
                     <label user="name">Name : </label>
-                    <input  type="text" name="name" id="name" className="inputfield" value={userDetails.name} onChange={handleInput}/>
+                    <input required type="text" name="name" id="name" className="inputfield" value={userDetails.name} onChange={handleInput}/>
                 </div>
                 <div>
                     <label user="department" >Department : </label>
-                    <input  type="text" name="department" id="department" className="inputfield" value={userDetails.department} onChange={handleInput}/>
+                    <input required type="text" name="department" id="department" className="inputfield" value={userDetails.department} onChange={handleInput}/>
                 </div>
                 <div>
                     <label user="rating" >Rating : </label>
-                    <input  type="number" name="rating" id="rating" className="inputfield" value={userDetails.rating} onChange={handleInput}/>
+                    <input  required type="number" name="rating" id="rating" className="inputfield" value={userDetails.rating} onChange={handleInput}/>
                 </div>
                 <button type="submit" className="submit-btn" >Click Here To Submit</button><br/><br/>
             </form>
